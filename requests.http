@@ -1,0 +1,41 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+[ 
+{
+    "name": "Raskitichiii",
+    "age": 33,
+    "email": "chichi@gmail.com"
+},
+{
+    "name": "nepomuseno",
+    "age": 160,
+    "email": "nepopo@gmail.com"
+},
+{
+    "name": "kaka",
+    "age": 26,
+    "email": "popo@gmail.com"
+}
+]
+
+
+### 
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/655cefbc6a5a2322cf76ce28 HTTP/1.1
+
+###
+DELETE  http://localhost:3000/api/users/655cefc16a5a2322cf76ce2a HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/655cefbc6a5a2322cf76ce28 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Carlos Acosta",
+    "age": 45,
+    "email": "johonmatcrvt@cacorrosky.com"
+}
